@@ -1,8 +1,12 @@
-# @stackup/eslint-config
+<h1 align="center">@stackup/eslint-config</h1>
 
-![Build](https://img.shields.io/travis/rzane/eslint-config/master?style=flat-square)
-![Version](https://img.shields.io/npm/v/stackup/eslint-config?style=flat-square)
-![License](https://img.shields.io/npm/l/stackup/eslint-config?style=flat-square)
+<div align="center">
+
+![Build](https://github.com/rzane/eslint-config/workflows/CI/badge.svg)
+![Version](https://img.shields.io/npm/v/@stackup/eslint-config)
+![License](https://img.shields.io/npm/l/@stackup/eslint-config)
+
+</div>
 
 A metapackage for ESLint configuration.
 
