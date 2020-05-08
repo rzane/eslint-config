@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if node_modules/.bin/eslint "test/fixtures/**/*" --config test/eslintrc.js --ext .ts,.tsx; then
+  echo "Error: Expected ESLint to fail, but it didn't"
+  exit 1
+else
+  echo "Success: ESLint raised errors, which is expected."
+  exit 0
+fi
