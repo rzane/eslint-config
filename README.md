@@ -1,5 +1,9 @@
 # @stackup/eslint-config
 
+![Build](https://img.shields.io/travis/rzane/eslint-config/master?style=flat-square)
+![Version](https://img.shields.io/npm/v/stackup/eslint-config?style=flat-square)
+![License](https://img.shields.io/npm/l/stackup/eslint-config?style=flat-square)
+
 A metapackage for ESLint configuration.
 
 ## Usage
