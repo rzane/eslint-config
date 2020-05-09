@@ -1,0 +1,9 @@
+
+test/fixtures/a.ts
+  1:1  error  Dependency cycle detected  import/no-cycle
+
+test/fixtures/b.ts
+  1:1  error  Dependency cycle detected  import/no-cycle
+
+✖ 2 problems (2 errors, 0 warnings)
+

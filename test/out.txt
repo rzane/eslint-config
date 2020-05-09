@@ -1,4 +1,0 @@
-test/fixtures/a.ts: line 1, col 1, Error - Dependency cycle detected. (import/no-cycle)
-test/fixtures/b.ts: line 1, col 1, Error - Dependency cycle detected. (import/no-cycle)
-
-2 problems
