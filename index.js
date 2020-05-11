@@ -16,12 +16,12 @@ module.exports = {
     jest: true,
     node: true,
   },
+  plugins: ["@typescript-eslint", "import"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:import/recommended",
     "plugin:import/typescript",
     "prettier",
     "prettier/@typescript-eslint",
@@ -35,7 +35,14 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/unbound-method": "off",
-    "import/no-cycle": "error",
+
+    "import/first": "error",
+    "import/no-amd": "error",
+    "import/no-anonymous-default-export": "warn",
+    "import/no-default-export": "warn",
+    "import/no-duplicates": "warn",
+    "import/no-webpack-loader-syntax": "error",
+
     "no-restricted-globals": ["error"].concat(restrictedGlobals),
   },
 };

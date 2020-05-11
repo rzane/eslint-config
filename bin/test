@@ -10,7 +10,7 @@ node_modules/.bin/eslint "test/fixtures/**/*" \
 
 if [ ! -f test/snapshot.txt ]; then
   echo "Snapshot written"
-  cp test/out.txt test/snapshot.txt
+  cp "$out" test/snapshot.txt
 fi
 
 if diff -q "$out" test/snapshot.txt; then

@@ -1,4 +1,10 @@
-import { b } from "./b";
+// no-restricted-globals
+// @typescript-eslint/no-unused-vars
+const window = 2;
 
-export const a = b;
-export const c = 1;
+// import/first
+import "path";
+
+// import/no-default-export
+// import/no-anonymous-default-export
+export default () => null;

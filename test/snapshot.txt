@@ -1,9 +1,10 @@
 
 test/fixtures/a.ts
-  1:1  error  Dependency cycle detected  import/no-cycle
+   3:7  error    'window' is assigned a value but never used                             @typescript-eslint/no-unused-vars
+   6:1  error    Import in body of module; reorder to top                                import/first
+  10:1  warning  Assign arrow function to a variable before exporting as module default  import/no-anonymous-default-export
+  10:1  warning  Prefer named exports                                                    import/no-default-export
 
-test/fixtures/b.ts
-  1:1  error  Dependency cycle detected  import/no-cycle
-
-✖ 2 problems (2 errors, 0 warnings)
+✖ 4 problems (2 errors, 2 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
 
