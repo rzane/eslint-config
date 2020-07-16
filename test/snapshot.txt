@@ -1,10 +1,18 @@
 
-test/fixtures/a.ts
-   3:7  error    'window' is assigned a value but never used                             @typescript-eslint/no-unused-vars
-   6:1  error    Import in body of module; reorder to top                                import/first
-  10:1  warning  Assign arrow function to a variable before exporting as module default  import/no-anonymous-default-export
-  10:1  warning  Prefer named exports                                                    import/no-default-export
+test/fixtures/globals.ts
+  1:1  error  Unexpected use of 'addEventListener'                        no-restricted-globals
+  1:1  error  Read-only global 'addEventListener' should not be modified  no-global-assign
 
-✖ 4 problems (2 errors, 2 warnings)
+test/fixtures/hooks.ts
+  7:5  error  React Hook "React.useEffect" is called conditionally. React Hooks must be called in the exact same order in every component render  react-hooks/rules-of-hooks
+
+test/fixtures/import.ts
+  6:1  warning  Assign arrow function to a variable before exporting as module default  import/no-anonymous-default-export
+  6:1  warning  Prefer named exports                                                    import/no-default-export
+
+test/fixtures/style.ts
+  1:20  error  Replace `(⏎··"bar"⏎)` with `"bar";`  prettier/prettier
+
+✖ 6 problems (4 errors, 2 warnings)
   1 error and 0 warnings potentially fixable with the `--fix` option.
 
