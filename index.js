@@ -16,14 +16,14 @@ module.exports = {
     jest: true,
     node: true,
   },
-  plugins: ["@typescript-eslint", "import"],
+  plugins: ["@typescript-eslint", "import", "prettier"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/typescript",
-    "prettier",
+    "plugin:prettier/recommended",
     "prettier/@typescript-eslint",
   ],
   rules: {
