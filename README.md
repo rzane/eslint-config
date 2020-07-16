@@ -8,23 +8,28 @@
 
 </div>
 
-A metapackage for ESLint configuration.
+A metapackage for ESLint configuration for TypeScript projects.
+
+The following plugins are integrated:
+
+- `eslint-plugin-import`
+- `eslint-plugin-jsx-a11y`
+- `eslint-plugin-prettier`
+- `eslint-plugin-react`
+- `eslint-plugin-react-hooks`
 
 ## Usage
 
 If you're starting a project from scratch, just run the following commands:
 
-    $ yarn add eslint @stackup/eslint-config --dev
+    $ yarn add eslint prettier @stackup/eslint-config --dev
 
-Create an ESLint configuration file at `.eslintrc`:
+If you're using React, your configuration should look like this:
 
 ```json
 {
   "root": true,
-  "extends": [
-    "@stackup/eslint-config"
-    "@stackup/eslint-config/react"
-  ],
+  "extends": ["@stackup/eslint-config", "@stackup/eslint-config/react"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -32,6 +37,18 @@ Create an ESLint configuration file at `.eslintrc`:
     "react": {
       "version": "detect"
     }
+  }
+}
+```
+
+Otherwise, your configuration should look like this:
+
+```json
+{
+  "root": true,
+  "extends": ["@stackup/eslint-config"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
   }
 }
 ```
