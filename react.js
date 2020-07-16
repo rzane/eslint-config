@@ -7,4 +7,5 @@ module.exports = {
   rules: {
     "react/prop-types": "off",
   },
+  plugins: ["react", "react-hooks", "jsx-a11y"],
 };
