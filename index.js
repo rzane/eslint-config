@@ -24,7 +24,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
   ],
   rules: {
     "@typescript-eslint/ban-types": "off",
