@@ -31,7 +31,7 @@
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.34",
+    "@types/react": "^18.0.8",
     "eslint": "^7",
     "prettier": "^2.4.1",
     "react": "^17.0.1",
